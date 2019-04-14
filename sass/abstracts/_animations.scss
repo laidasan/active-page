@@ -1,0 +1,17 @@
+@keyframes subject-text {
+    0% {
+        transform: translateX(90%);
+    }
+    100% {
+        transform: translateX(-90%);
+    }
+}
+
+@keyframes btn-shrink {
+    0%{
+        left: -100px;
+    }
+    100% {
+       left: 300px;
+    }
+}

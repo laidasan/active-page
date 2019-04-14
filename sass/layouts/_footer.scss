@@ -1,0 +1,12 @@
+.footer {
+    background-color: $color-primary;
+    padding: 6rem 12rem;
+    @include clearfix;
+    
+    &__left {
+        float: left;
+    }
+    &__right{
+        float: right;
+    }
+}

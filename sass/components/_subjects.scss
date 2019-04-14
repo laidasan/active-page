@@ -1,0 +1,16 @@
+.subject {
+    width: 100%;
+    padding: 1.5rem 0;
+    margin-top: 7.2rem;
+    background-color: $color-grey-light;
+
+    overflow: hidden;
+
+    &__text {
+        letter-spacing: .6rem;
+        text-align: center;
+        color: $color-red;
+        animation: subject-text 20s linear infinite;
+        // transform: translateX(60%);
+    }
+}
