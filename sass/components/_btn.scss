@@ -3,21 +3,23 @@
     &:link,
     &:visited {
         display: inline-block;
-        font-size: 2.4rem;
+        font-size: 3rem;
         font-weight: 600;
         text-decoration: none;
         text-align: center;
         color: $color-primary;
-    
+        
         padding: 2.1rem 3rem;
-        margin-top: 2.1rem;
+        margin-top: 2.7rem;
         border-radius: 10px;
-        box-shadow: 0 3px 15px 0px rgba($color-black,.6);
+        box-shadow: 0 0 0 3px $color-primary-light;
+        background: $color-grey-dark;
         overflow: hidden;
-
-        transition: all .3s;
+        box-sizing: border-box;
+        
+        transition: all .6s;
     }
-
+    
     &::after {
         content: '';
         position: absolute;
@@ -32,6 +34,8 @@
     
     &:hover {
         color: $color-white;
+        border: none;
+        box-shadow: 3px 10px 10px 0px rgba($color-primary-dark,.8);
         transform: translateY(-5px);
     }
     &:active {

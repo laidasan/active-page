@@ -8,7 +8,7 @@
   0% {
     left: -100px; }
   100% {
-    left: 300px; } }
+    left: 320px; } }
 
 /*$breakpoint augument chooise
     -phone
@@ -106,17 +106,19 @@ body {
   position: relative; }
   .btn:link, .btn:visited {
     display: inline-block;
-    font-size: 2.4rem;
+    font-size: 3rem;
     font-weight: 600;
     text-decoration: none;
     text-align: center;
     color: #22bbaa;
     padding: 2.1rem 3rem;
-    margin-top: 2.1rem;
+    margin-top: 2.7rem;
     border-radius: 10px;
-    box-shadow: 0 3px 15px 0px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 0 3px #22ddaa;
+    background: #333;
     overflow: hidden;
-    transition: all .3s; }
+    box-sizing: border-box;
+    transition: all .6s; }
   .btn::after {
     content: '';
     position: absolute;
@@ -128,6 +130,8 @@ body {
     background-color: #fff; }
   .btn:hover {
     color: #fff;
+    border: none;
+    box-shadow: 3px 10px 10px 0px rgba(34, 153, 102, 0.8);
     transform: translateY(-5px); }
   .btn:active {
     transform: translateY(-3px); }
