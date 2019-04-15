@@ -1,7 +1,10 @@
 .question {
-    margin-left: 6rem;
+    // margin-left: 6rem;
+    // margin-right: 6rem;
 
+    margin: 0 6rem 0;
     &__answer {
         color: $color-white;
     }
+
 }

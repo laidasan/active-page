@@ -146,7 +146,7 @@ body {
       background-color: #22bbaa; } }
 
 .question {
-  margin-left: 6rem; }
+  margin: 0 6rem 0; }
   .question__answer {
     color: #fff; }
 
