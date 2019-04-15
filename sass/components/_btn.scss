@@ -55,7 +55,7 @@
         &:link,
         &:visited {
             color: $color-white;
-            box-shadow: none;
+            box-shadow: 3px 10px 10px 0px rgba($color-primary-dark,.8);
             background-color: $color-primary;
         }
     }

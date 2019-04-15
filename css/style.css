@@ -142,7 +142,7 @@ body {
   @media screen and (hover: none), screen and (max-width: 600px) {
     .btn:link, .btn:visited {
       color: #fff;
-      box-shadow: none;
+      box-shadow: 3px 10px 10px 0px rgba(34, 153, 102, 0.8);
       background-color: #22bbaa; } }
 
 .question {
