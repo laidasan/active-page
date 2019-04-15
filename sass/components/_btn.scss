@@ -50,10 +50,12 @@
         background-color: $color-primary;
     }
 
-    @media screen and (hover:none){
+    @media screen and (hover:none),
+           screen and (max-width: 600px){
         &:link,
         &:visited {
             color: $color-white;
+            box-shadow: none;
             background-color: $color-primary;
         }
     }

@@ -139,9 +139,10 @@ body {
     animation: btn-shrink .5s ease-in-out forwards; }
   .btn--primary:hover {
     background-color: #22bbaa; }
-  @media screen and (hover: none) {
+  @media screen and (hover: none), screen and (max-width: 600px) {
     .btn:link, .btn:visited {
       color: #fff;
+      box-shadow: none;
       background-color: #22bbaa; } }
 
 .question {
@@ -160,7 +161,8 @@ body {
 .header {
   position: relative;
   width: 100%;
-  height: 100vh; }
+  height: 100vh;
+  overflow: hidden; }
   .header-bg {
     position: absolute;
     width: 100%;
@@ -171,8 +173,12 @@ body {
     background-size: cover;
     opacity: .3;
     z-index: -1; }
+    @media screen and (max-width: 1400px) {
+      .header-bg {
+        background-position: center center; } }
   .header-wrap {
     width: 75%;
+    border: 3px solid #fff;
     text-align: center;
     position: absolute;
     top: 50%;

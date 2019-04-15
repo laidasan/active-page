@@ -32,7 +32,7 @@
         @media screen and (max-width: 1400px) {@content};  
     }
     @if $breakpoint == big-desktop {
-        @media screen and (min-width: 1800px) {@content};  
+        @media screen and (min-width: 1800px) {@content};
     }
 }
 
