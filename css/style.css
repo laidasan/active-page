@@ -61,17 +61,17 @@ body {
   color: #fff; }
 
 .heading-tertiary {
-  font-size: 3.6rem;
+  font-size: 3rem;
   font-weight: 600;
   line-height: 1.5;
   color: #fff; }
-  @media screen and (max-width: 1600px) {
+  @media screen and (min-width: 1800px) {
     .heading-tertiary {
-      font-size: 2.7rem;
+      font-size: 3.6rem; } }
+  @media screen and (max-width: 1400px) {
+    .heading-tertiary {
+      font-size: 2.4rem;
       line-height: 1.2; } }
-  @media screen and (max-width: 900px) {
-    .heading-tertiary {
-      font-size: 2.4rem; } }
   @media screen and (max-width: 900px) {
     .heading-tertiary {
       font-size: 1.8rem; } }

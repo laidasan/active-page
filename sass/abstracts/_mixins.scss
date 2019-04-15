@@ -29,7 +29,7 @@
         @media screen and (max-width: 900px) {@content};  
     }
     @if $breakpoint == tab-landscape {
-        @media screen and (max-width: 1600px) {@content};  
+        @media screen and (max-width: 1400px) {@content};  
     }
     @if $breakpoint == big-desktop {
         @media screen and (min-width: 1800px) {@content};  
