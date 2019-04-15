@@ -13,3 +13,26 @@
     }
 }
 
+
+/*$breakpoint augument chooise
+    -phone
+    -tab-port
+    -tab-landscape
+    -big-desktop
+*/
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+        @media screen and (max-width: 600px) {@content};
+    }
+    @if $breakpoint == tab-port {
+        @media screen and (max-width: 900px) {@content};  
+    }
+    @if $breakpoint == tab-landscape {
+        @media screen and (max-width: 1600px) {@content};  
+    }
+    @if $breakpoint == big-desktop {
+        @media screen and (min-width: 1800px) {@content};  
+    }
+}
+

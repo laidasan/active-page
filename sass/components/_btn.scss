@@ -46,4 +46,11 @@
         background-color: $color-primary;
     }
 
+    @media screen and (hover:none){
+        &:link,
+        &:visited {
+            color: $color-white;
+            background-color: $color-primary;
+        }
+    }
 }

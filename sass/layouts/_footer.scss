@@ -1,12 +1,23 @@
 .footer {
     background-color: $color-primary;
-    padding: 6rem 12rem;
+    padding: 6rem 6rem;
     @include clearfix;
     
+    // &__container {
+    //     width: 45%;
+    // }
     &__left {
         float: left;
     }
     &__right{
         float: right;
+        text-align: right;
+    }
+    @media screen and (max-width: 1200px) {
+        &__left,&__right {
+            float: none;
+            text-align: center;
+            
+        }
     }
 }

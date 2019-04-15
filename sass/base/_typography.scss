@@ -2,6 +2,11 @@
     font-size: 6rem;
     font-weight: 800;
     line-height: 1.8;
+
+    @include respond(phone) {
+        font-size: 3rem;
+        line-height: 1.5;
+    }
 }
 .heading-secondary {
     font-size: 5rem;
@@ -14,9 +19,16 @@
     font-weight: 600;
     line-height: 1.5;
     color:$color-white;
-    
-    @media screen and (max-widht:1800px) {
-        
+
+    @include respond(tab-landscape) {
+        font-size: 2.7rem;
+        line-height: 1.2;
+    }
+    @include respond(tab-port) {
+        font-size: 2.4rem;
+    }
+    @include respond(tab-port) {
+        font-size: 1.8rem;
     }
 }
 .heading-forth {

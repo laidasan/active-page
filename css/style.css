@@ -10,6 +10,12 @@
   100% {
     left: 300px; } }
 
+/*$breakpoint augument chooise
+    -phone
+    -tab-port
+    -tab-landscape
+    -big-desktop
+*/
 html {
   font-size: 62.5%; }
 
@@ -43,6 +49,10 @@ body {
   font-size: 6rem;
   font-weight: 800;
   line-height: 1.8; }
+  @media screen and (max-width: 600px) {
+    .heading-primary {
+      font-size: 3rem;
+      line-height: 1.5; } }
 
 .heading-secondary {
   font-size: 5rem;
@@ -55,6 +65,16 @@ body {
   font-weight: 600;
   line-height: 1.5;
   color: #fff; }
+  @media screen and (max-width: 1600px) {
+    .heading-tertiary {
+      font-size: 2.7rem;
+      line-height: 1.2; } }
+  @media screen and (max-width: 900px) {
+    .heading-tertiary {
+      font-size: 2.4rem; } }
+  @media screen and (max-width: 900px) {
+    .heading-tertiary {
+      font-size: 1.8rem; } }
 
 .heading-forth {
   font-size: 2.4rem;
@@ -79,7 +99,8 @@ body {
     letter-spacing: .6rem;
     text-align: center;
     color: #f00;
-    animation: subject-text 20s linear infinite; }
+    animation: subject-text 20s linear infinite;
+    white-space: nowrap; }
 
 .btn {
   position: relative; }
@@ -114,6 +135,10 @@ body {
     animation: btn-shrink .5s ease-in-out forwards; }
   .btn--primary:hover {
     background-color: #22bbaa; }
+  @media screen and (hover: none) {
+    .btn:link, .btn:visited {
+      color: #fff;
+      background-color: #22bbaa; } }
 
 .question {
   margin-left: 6rem; }
@@ -123,6 +148,10 @@ body {
 .author {
   background-color: #229966;
   padding: 3rem 0; }
+  .author__paragraph {
+    font-size: 1.2rem;
+    letter-spacing: 0;
+    color: #fff; }
 
 .header {
   position: relative;
@@ -185,13 +214,19 @@ body {
   .content-img {
     float: right;
     width: 49%; }
+  @media screen and (max-width: 600px) {
+    .content-text-left, .content-text-right, .content-img {
+      position: initial;
+      width: 100%;
+      transform: translateY(0);
+      float: none; } }
   .content__poster {
     width: 100%;
     height: 100%; }
 
 .footer {
   background-color: #22bbaa;
-  padding: 6rem 12rem; }
+  padding: 6rem 6rem; }
   .footer::after {
     content: '';
     clear: both;
@@ -199,7 +234,12 @@ body {
   .footer__left {
     float: left; }
   .footer__right {
-    float: right; }
+    float: right;
+    text-align: right; }
+  @media screen and (max-width: 1200px) {
+    .footer__left, .footer__right {
+      float: none;
+      text-align: center; } }
 
 .section-when, .section-about {
   background-color: #333;

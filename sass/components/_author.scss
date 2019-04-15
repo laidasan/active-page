@@ -1,4 +1,10 @@
 .author {
     background-color: $color-primary-dark;
     padding: 3rem 0;
+
+    &__paragraph {
+        font-size: 1.2rem;
+        letter-spacing:0;
+        color: $color-white;
+    }
 }

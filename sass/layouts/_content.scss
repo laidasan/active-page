@@ -20,6 +20,16 @@
         float: right;
         width: 49%;
     }
+    
+    &-text-left,&-text-right,&-img {
+        @include respond(phone) {
+            position: initial;
+            width: 100%;
+            transform: translateY(0);
+            float: none;
+        }
+    }
+
     &__poster {
         width: 100%;
         height: 100%;
