@@ -19,14 +19,12 @@
         @include respond (tab-landscape) {
             background-position: center center;
         }
-        
+
     }
 
     &-wrap {
         width: 75%;
-        border: 3px solid #fff;
         text-align: center;
-
         @include align-center;
     }
 
